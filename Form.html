@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORM</title>
+</head>
+<body>
+    <form action="index.php" methods="POST" enctype="multipart/form-data">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Type here:"> <br>
+        <hr>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Type here:"> <br>
+        <hr>
+
+        <label for="username" >Username</label>
+        <input type="text" id="username" placeholder="Type here:"> <br>
+        <hr>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Type here:" minlength="8">
+        <hr>
+
+        <label for="phone">Phone no.</label>
+        <input type="tel" id="phone" placeholder="0123 456 7890" pattern="[0-9]{4} [0-9]{3} [0-9]{4}">
+        <hr>
+
+        <label for="bday">Birthday</label>
+        <input type="date" id="bday"> <br>
+        <hr>
+
+        <label for="gender">Gender:</label>
+        
+        <label for="male">Male</label>
+        <input type="radio" id="male" value="male" name="gender">
+        <label for="female">Female</label>
+        <input type="radio" id="female" value="female" name="gender">
+        <label for="lgbtq+">LGBTQ+</label>
+        <input type="radio" id="lgbtq+" value="lgbtq+" name="gender"> <br>
+        <hr>
+
+        <label for="payment">Payment</label>
+        <select id="payment">
+            <option>GCash</option>
+            <option>Debit</option>
+            <option>Credit</option>
+        </select> <br>
+        <hr>
+
+        <label for="file">Profile Picture</label>
+        <input type="file" id="file" accept="image/png, image/jpeg">
+
+
+
+
+        <br> <br> <input type="submit">
+    </form>
+</body>
+</html>
